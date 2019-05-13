@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		EE6328F02284CCFF009C74E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6328EF2284CCFF009C74E1 /* AppDelegate.swift */; };
-		EE6328F22284CCFF009C74E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6328F12284CCFF009C74E1 /* ViewController.swift */; };
 		EE6328F52284CCFF009C74E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6328F32284CCFF009C74E1 /* Main.storyboard */; };
 		EE6328F72284CD01009C74E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6328F62284CD01009C74E1 /* Assets.xcassets */; };
 		EE6328FA2284CD01009C74E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6328F82284CD01009C74E1 /* LaunchScreen.storyboard */; };
 		EE6329052284CD01009C74E1 /* Knollwood_VillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6329042284CD01009C74E1 /* Knollwood_VillaTests.swift */; };
 		EE6329102284CD01009C74E1 /* Knollwood_VillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63290F2284CD01009C74E1 /* Knollwood_VillaUITests.swift */; };
+		EE6329222289E1EC009C74E1 /* HomeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6329212289E1EC009C74E1 /* HomeVc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		EE6328EC2284CCFF009C74E1 /* Knollwood Villa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Knollwood Villa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6328EF2284CCFF009C74E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE6328F12284CCFF009C74E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE6328F42284CCFF009C74E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE6328F62284CD01009C74E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE6328F92284CD01009C74E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		EE63290B2284CD01009C74E1 /* Knollwood VillaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Knollwood VillaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE63290F2284CD01009C74E1 /* Knollwood_VillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knollwood_VillaUITests.swift; sourceTree = "<group>"; };
 		EE6329112284CD01009C74E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE6329212289E1EC009C74E1 /* HomeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				EE6328EF2284CCFF009C74E1 /* AppDelegate.swift */,
-				EE6328F12284CCFF009C74E1 /* ViewController.swift */,
 				EE6328F32284CCFF009C74E1 /* Main.storyboard */,
 				EE6328F62284CD01009C74E1 /* Assets.xcassets */,
 				EE6328F82284CD01009C74E1 /* LaunchScreen.storyboard */,
 				EE6328FB2284CD01009C74E1 /* Info.plist */,
+				EE6329212289E1EC009C74E1 /* HomeVc.swift */,
 			);
 			path = "Knollwood Villa";
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EE6328E72284CCFF009C74E1 /* Build configuration list for PBXProject "Knollwood Villa" */;
+			buildConfigurationList = EE6328E72284CCFF009C74E1 /* Build configuration list for PBXProject "KnollwoodVilla" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -256,8 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE6328F22284CCFF009C74E1 /* ViewController.swift in Sources */,
 				EE6328F02284CCFF009C74E1 /* AppDelegate.swift in Sources */,
+				EE6329222289E1EC009C74E1 /* HomeVc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +549,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE6328E72284CCFF009C74E1 /* Build configuration list for PBXProject "Knollwood Villa" */ = {
+		EE6328E72284CCFF009C74E1 /* Build configuration list for PBXProject "KnollwoodVilla" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE6329122284CD01009C74E1 /* Debug */,

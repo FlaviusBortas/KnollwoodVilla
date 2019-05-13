@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="495" y="454"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Vc-->
         <scene sceneID="Flg-vR-Obr">
             <objects>
-                <tabBarController id="tff-SD-W9X" sceneMemberID="viewController">
+                <tabBarController id="tff-SD-W9X" customClass="HomeVc" customModule="Knollwood_Villa" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gBE-5B-ddm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
