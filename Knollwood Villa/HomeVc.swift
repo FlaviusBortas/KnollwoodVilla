@@ -16,15 +16,28 @@ class HomeVc: UITabBarController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        switch segue.identifier {
+        case Tabs.contact.rawValue:
+            performSegue(withIdentifier: Tabs.contact.rawValue, sender: sender)
+            
+        case Tabs.aboutUs.rawValue:
+            performSegue(withIdentifier: Tabs.aboutUs.rawValue, sender: sender)
+            
+        case Tabs.gallery.rawValue:
+            performSegue(withIdentifier: Tabs.gallery.rawValue, sender: sender)
+            
+        case Tabs.news.rawValue:
+            performSegue(withIdentifier: Tabs.news.rawValue, sender: sender)
+        default:
+            print("Error")
+        }
+        
     }
-    */
-
+    
+    
 }
+
