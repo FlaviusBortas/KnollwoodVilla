@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tff-SD-W9X">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,11 +13,11 @@
         <!--Item 2-->
         <scene sceneID="jjM-oa-O4W">
             <objects>
-                <viewController id="926-Zf-hdw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dEP-i0-n2P">
+                <viewController id="926-Zf-hdw" customClass="AboutUsViewController" customModule="Knollwood_Villa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dEP-i0-n2P" customClass="AboutUsView" customModule="Knollwood_Villa" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.66545892791400574" green="1" blue="0.95246549402879666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <accessibility key="accessibilityConfiguration" identifier="AboutUs"/>
                         <viewLayoutGuide key="safeArea" id="2Ua-eM-8Zh"/>
                     </view>
@@ -30,11 +30,11 @@
         <!--Item 1-->
         <scene sceneID="Vyf-a2-edn">
             <objects>
-                <viewController id="B4X-GY-4Dj" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Z4h-pR-RVA">
+                <viewController id="B4X-GY-4Dj" customClass="ContactViewController" customModule="Knollwood_Villa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z4h-pR-RVA" customClass="ContactView" customModule="Knollwood_Villa" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.65007228249296545" green="1" blue="0.62779235810581402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <accessibility key="accessibilityConfiguration" identifier="Contact"/>
                         <viewLayoutGuide key="safeArea" id="c9h-cx-3Vt"/>
                     </view>
@@ -67,11 +67,11 @@
         <!--Item 1-->
         <scene sceneID="i64-av-tQw">
             <objects>
-                <viewController id="2f2-sY-N4i" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lGu-kK-VeF">
+                <viewController id="2f2-sY-N4i" customClass="GalleryViewController" customModule="Knollwood_Villa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lGu-kK-VeF" customClass="GalleryView" customModule="Knollwood_Villa" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.71625526529912531" blue="0.44888723971259348" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <accessibility key="accessibilityConfiguration" identifier="Gallery"/>
                         <viewLayoutGuide key="safeArea" id="QJW-hA-3wU"/>
                     </view>
@@ -84,11 +84,11 @@
         <!--Item 1-->
         <scene sceneID="f3g-fj-6B5">
             <objects>
-                <viewController id="arx-bK-w7b" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DE4-x2-TTo">
+                <viewController id="arx-bK-w7b" customClass="NewsViewController" customModule="Knollwood_Villa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DE4-x2-TTo" customClass="NewsView" customModule="Knollwood_Villa" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.82303452267846522" green="0.78077960445233052" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <accessibility key="accessibilityConfiguration" identifier="News"/>
                         <viewLayoutGuide key="safeArea" id="ggY-q1-7Lm"/>
                     </view>
