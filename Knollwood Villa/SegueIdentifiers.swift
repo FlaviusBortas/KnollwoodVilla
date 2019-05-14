@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Tabs: String {
+enum HomeTab: String {
     
     case aboutUs = "AboutUs"
     case gallery = "Gallery"
