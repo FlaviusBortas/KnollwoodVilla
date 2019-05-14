@@ -13,7 +13,7 @@
 		EE6328FA2284CD01009C74E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6328F82284CD01009C74E1 /* LaunchScreen.storyboard */; };
 		EE6329052284CD01009C74E1 /* Knollwood_VillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6329042284CD01009C74E1 /* Knollwood_VillaTests.swift */; };
 		EE6329102284CD01009C74E1 /* Knollwood_VillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63290F2284CD01009C74E1 /* Knollwood_VillaUITests.swift */; };
-		EE6329222289E1EC009C74E1 /* HomeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6329212289E1EC009C74E1 /* HomeVc.swift */; };
+		EE6329222289E1EC009C74E1 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6329212289E1EC009C74E1 /* HomeTabBarController.swift */; };
 		EE632924228A0DE7009C74E1 /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE632923228A0DE7009C74E1 /* SegueIdentifiers.swift */; };
 		EE63292C228A12EE009C74E1 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63292B228A12EE009C74E1 /* AboutUsViewController.swift */; };
 		EE63292E228A12FE009C74E1 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63292D228A12FE009C74E1 /* GalleryViewController.swift */; };
@@ -51,7 +51,7 @@
 		EE63290B2284CD01009C74E1 /* Knollwood VillaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Knollwood VillaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE63290F2284CD01009C74E1 /* Knollwood_VillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knollwood_VillaUITests.swift; sourceTree = "<group>"; };
 		EE6329112284CD01009C74E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE6329212289E1EC009C74E1 /* HomeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVc.swift; sourceTree = "<group>"; };
+		EE6329212289E1EC009C74E1 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		EE632923228A0DE7009C74E1 /* SegueIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
 		EE63292B228A12EE009C74E1 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		EE63292D228A12FE009C74E1 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				EE6328F62284CD01009C74E1 /* Assets.xcassets */,
 				EE6328F82284CD01009C74E1 /* LaunchScreen.storyboard */,
 				EE6328FB2284CD01009C74E1 /* Info.plist */,
-				EE6329212289E1EC009C74E1 /* HomeVc.swift */,
+				EE6329212289E1EC009C74E1 /* HomeTabBarController.swift */,
 				EE63292B228A12EE009C74E1 /* AboutUsViewController.swift */,
 				EE63292D228A12FE009C74E1 /* GalleryViewController.swift */,
 				EE632923228A0DE7009C74E1 /* SegueIdentifiers.swift */,
@@ -277,7 +277,7 @@
 				EE632932228A131E009C74E1 /* ContactViewController.swift in Sources */,
 				EE632930228A1316009C74E1 /* NewsViewController.swift in Sources */,
 				EE6328F02284CCFF009C74E1 /* AppDelegate.swift in Sources */,
-				EE6329222289E1EC009C74E1 /* HomeVc.swift in Sources */,
+				EE6329222289E1EC009C74E1 /* HomeTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
