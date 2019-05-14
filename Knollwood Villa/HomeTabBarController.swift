@@ -22,14 +22,14 @@ class HomeTabBarController: UITabBarController {
     override func performSegue(withIdentifier identifier: String, sender: Any?) {
         
         switch identifier {
-        case Tabs.contact.rawValue:
-            performSegue(withIdentifier: Tabs.contact.rawValue, sender: sender)
-        case Tabs.aboutUs.rawValue:
-            performSegue(withIdentifier: Tabs.aboutUs.rawValue, sender: sender)
-        case Tabs.gallery.rawValue:
-            performSegue(withIdentifier: Tabs.contact.rawValue, sender: sender)
-        case Tabs.news.rawValue:
-            performSegue(withIdentifier: Tabs.news.rawValue, sender: sender)
+        case HomeTab.contact.rawValue:
+            performSegue(withIdentifier: HomeTab.contact.rawValue, sender: sender)
+        case HomeTab.aboutUs.rawValue:
+            performSegue(withIdentifier: HomeTab.aboutUs.rawValue, sender: sender)
+        case HomeTab.gallery.rawValue:
+            performSegue(withIdentifier: HomeTab.contact.rawValue, sender: sender)
+        case HomeTab.news.rawValue:
+            performSegue(withIdentifier: HomeTab.news.rawValue, sender: sender)
         default:
             print("Error")
         }
