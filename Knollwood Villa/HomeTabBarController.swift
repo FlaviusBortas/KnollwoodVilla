@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeTabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,27 +17,23 @@ class HomeTabBarController: UITabBarController {
     }
     
     // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    
+    override func performSegue(withIdentifier identifier: String, sender: Any?) {
         
-        switch segue.identifier {
+        switch identifier {
         case Tabs.contact.rawValue:
             performSegue(withIdentifier: Tabs.contact.rawValue, sender: sender)
-            
         case Tabs.aboutUs.rawValue:
             performSegue(withIdentifier: Tabs.aboutUs.rawValue, sender: sender)
-            
         case Tabs.gallery.rawValue:
-            performSegue(withIdentifier: Tabs.gallery.rawValue, sender: sender)
-            
+            performSegue(withIdentifier: Tabs.contact.rawValue, sender: sender)
         case Tabs.news.rawValue:
             performSegue(withIdentifier: Tabs.news.rawValue, sender: sender)
         default:
             print("Error")
         }
-        
     }
-    
     
 }
 
