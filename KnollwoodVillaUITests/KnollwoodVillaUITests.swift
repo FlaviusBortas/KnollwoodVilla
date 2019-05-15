@@ -1,5 +1,5 @@
 //
-//  Knollwood_VillaUITests.swift
+//  KnollwoodVillaUITests.swift
 //  Knollwood VillaUITests
 //
 //  Created by Flavius on 5/9/19.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class Knollwood_VillaUITests: XCTestCase {
+class KnollwoodVillaUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
