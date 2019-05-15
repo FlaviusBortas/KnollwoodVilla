@@ -6,7 +6,7 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
+/* Begin Pdle section */
 		EE6328F02284CCFF009C74E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6328EF2284CCFF009C74E1 /* AppDelegate.swift */; };
 		EE6328F52284CCFF009C74E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6328F32284CCFF009C74E1 /* Main.storyboard */; };
 		EE6328F72284CD01009C74E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6328F62284CD01009C74E1 /* Assets.xcassets */; };
@@ -27,14 +27,14 @@
 			containerPortal = EE6328E42284CCFF009C74E1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EE6328EB2284CCFF009C74E1;
-			remoteInfo = "Knollwood Villa";
+			remoteInfo = "KnollwoodVilla";
 		};
 		EE63290C2284CD01009C74E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EE6328E42284CCFF009C74E1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EE6328EB2284CCFF009C74E1;
-			remoteInfo = "Knollwood Villa";
+			remoteInfo = "KnollwoodVilla";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -156,7 +156,7 @@
 			dependencies = (
 			);
 			name = KnollwoodVilla;
-			productName = "Knollwood Villa";
+			productName = "KnollwoodVilla";
 			productReference = EE6328EC2284CCFF009C74E1 /* KnollwoodVilla.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -174,7 +174,7 @@
 				EE6329022284CD01009C74E1 /* PBXTargetDependency */,
 			);
 			name = KnollwoodVillaTests;
-			productName = "Knollwood VillaTests";
+			productName = "KnollwoodVillaTests";
 			productReference = EE6329002284CD01009C74E1 /* KnollwoodVillaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -192,7 +192,7 @@
 				EE63290D2284CD01009C74E1 /* PBXTargetDependency */,
 			);
 			name = KnollwoodVillaUITests;
-			productName = "Knollwood VillaUITests";
+			productName = "KnollwoodVillaUITests";
 			productReference = EE63290B2284CD01009C74E1 /* KnollwoodVillaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -459,7 +459,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flavius.Knollwood-Villa";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flavius.KnollwoodVilla";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -477,7 +477,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flavius.Knollwood-Villa";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flavius.KnollwoodVilla";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,17 +491,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4D37U3454;
-				INFOPLIST_FILE = "Knollwood VillaTests/Info.plist";
+				INFOPLIST_FILE = "KnollwoodVillaTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flavius.Knollwood-VillaTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flavius.KnollwoodVillaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knollwood Villa.app/Knollwood Villa";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnollwoodVilla.app/KnollwoodVilla";
 			};
 			name = Debug;
 		};
@@ -512,17 +512,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4D37U3454;
-				INFOPLIST_FILE = "Knollwood VillaTests/Info.plist";
+				INFOPLIST_FILE = "KnollwoodVillaTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flavius.Knollwood-VillaTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flavius.KnollwoodVillaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knollwood Villa.app/Knollwood Villa";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnollwoodVilla.app/KnollwoodVilla";
 			};
 			name = Release;
 		};
@@ -532,17 +532,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4D37U3454;
-				INFOPLIST_FILE = "Knollwood VillaUITests/Info.plist";
+				INFOPLIST_FILE = "KnollwoodVillaUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flavius.Knollwood-VillaUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flavius.KnollwoodVillaUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Knollwood Villa";
+				TEST_TARGET_NAME = "KnollwoodVilla";
 			};
 			name = Debug;
 		};
@@ -552,17 +552,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4D37U3454;
-				INFOPLIST_FILE = "Knollwood VillaUITests/Info.plist";
+				INFOPLIST_FILE = "KnollwoodVillaUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flavius.Knollwood-VillaUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flavius.KnollwoodVillaUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Knollwood Villa";
+				TEST_TARGET_NAME = "KnollwoodVilla";
 			};
 			name = Release;
 		};
