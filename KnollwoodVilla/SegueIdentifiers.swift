@@ -9,10 +9,8 @@
 import Foundation
 
 enum HomeTab: String {
-    
     case aboutUs = "AboutUs"
     case gallery = "Gallery"
     case news = "News"
     case contact = "Contact"
-    
 }
