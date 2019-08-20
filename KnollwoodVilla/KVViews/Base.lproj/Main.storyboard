@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--About Us-->
         <scene sceneID="jjM-oa-O4W">
             <objects>
-                <viewController id="926-Zf-hdw" customClass="AboutUsViewController" customModule="KnollwoodVilla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="926-Zf-hdw" userLabel="About Us" customClass="AboutUsViewController" customModule="KnollwoodVilla" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dEP-i0-n2P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="-1689" y="454"/>
         </scene>
-        <!--Item 1-->
+        <!--Contact-->
         <scene sceneID="Vyf-a2-edn">
             <objects>
-                <viewController id="B4X-GY-4Dj" customClass="ContactViewController" customModule="KnollwoodVilla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B4X-GY-4Dj" userLabel="Contact" customClass="ContactViewController" customModule="KnollwoodVilla" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z4h-pR-RVA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="495" y="454"/>
         </scene>
-        <!--Home Tab Bar Controller-->
+        <!--Home-->
         <scene sceneID="Flg-vR-Obr">
             <objects>
-                <tabBarController id="tff-SD-W9X" customClass="HomeTabBarController" customModule="KnollwoodVilla" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="tff-SD-W9X" userLabel="Home" customClass="HomeTabBarController" customModule="KnollwoodVilla" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gBE-5B-ddm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="-554" y="-317"/>
         </scene>
-        <!--Item 1-->
+        <!--Gallery-->
         <scene sceneID="i64-av-tQw">
             <objects>
-                <viewController id="2f2-sY-N4i" customClass="GalleryViewController" customModule="KnollwoodVilla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2f2-sY-N4i" userLabel="Gallery" customClass="GalleryViewController" customModule="KnollwoodVilla" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lGu-kK-VeF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="-927" y="454"/>
         </scene>
-        <!--Item 1-->
+        <!--News-->
         <scene sceneID="f3g-fj-6B5">
             <objects>
-                <viewController id="arx-bK-w7b" customClass="NewsViewController" customModule="KnollwoodVilla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="arx-bK-w7b" userLabel="News" customClass="NewsViewController" customModule="KnollwoodVilla" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DE4-x2-TTo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
