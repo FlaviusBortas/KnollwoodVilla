@@ -1,14 +1,14 @@
 //
-//  AboutUsView.swift
-//  Knollwood Villa
+//  AboutUsScrollViewController.swift
+//  KnollwoodVilla
 //
-//  Created by Flavius on 5/13/19.
+//  Created by Flavius on 8/20/19.
 //  Copyright © 2019 Flavius. All rights reserved.
 //
 
 import UIKit
 
-class AboutUsViewController: UIViewController {
+class AboutUsScrollViewController: UIScrollView {
 
     /*
     // Only override draw() if you perform custom drawing.
