@@ -10,8 +10,11 @@ import UIKit
 
 class HomeCollectionViewController: UIViewController {
     
+    var data: [Int] = Array(0..<10)
+    
+    
     let homeCollectionViewController: UICollectionView = {
-        let layout = UICollectionViewLayout()
+        let layout = UICollectionViewFlowLayout()
         let collection = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: layout)
         
         collection.backgroundColor = UIColor.gray
@@ -22,35 +25,96 @@ class HomeCollectionViewController: UIViewController {
     }()
     
     let imageView: UIImageView = {
-        let banner = UIImageView()
-        
-        banner.backgroundColor = UIColor.green
-        banner.translatesAutoresizingMaskIntoConstraints = false
-        
-        return banner
+       let view = UIImageView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .purple
+        return view
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.white
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "Home"
-        view.addSubview(imageView)
-        view.addSubview(homeCollectionViewController)
+        homeCollectionViewController.dataSource = self
+        homeCollectionViewController.delegate = self
+        homeCollectionViewController.register(HomeCell.self, forCellWithReuseIdentifier: HomeCell.reuseIdentifier)
+        
+        homeCollectionViewController.alwaysBounceVertical = true
+        homeCollectionViewController.backgroundColor = .white
+        
         setupCollectionViewController()
         
     }
     
     func setupCollectionViewController() {
-        imageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 125).isActive = true
         
-        homeCollectionViewController.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        homeCollectionViewController.heightAnchor.constraint(equalToConstant: 773).isActive = true
-        homeCollectionViewController.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
+        // Add all subViews
+        
+        view.addSubview(homeCollectionViewController)
+        view.addSubview(imageView)
+        
+        // Constraints
+        
+        NSLayoutConstraint.activate([imageView.topAnchor.constraint(equalTo: view.topAnchor),
+                                     imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                                     imageView.heightAnchor.constraint(equalToConstant: 125)
+            ])
+        
+        NSLayoutConstraint.activate([homeCollectionViewController.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+                                     homeCollectionViewController.heightAnchor.constraint(equalToConstant: 773),
+                                     homeCollectionViewController.widthAnchor.constraint(equalToConstant: view.frame.width)])
+    }
+    
+}
+
+extension HomeCollectionViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCell.reuseIdentifier, for: indexPath) as! HomeCell
+        let data = self.data[indexPath.item]
+        
+        cell.textLabel.text = String(data)
+        cell.backgroundColor = .yellow
+        
+        return cell
+    }
+}
+
+extension HomeCollectionViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+}
+
+extension HomeCollectionViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 125, height: 125)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
     }
     
 }

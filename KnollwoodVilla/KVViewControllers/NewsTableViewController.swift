@@ -32,25 +32,22 @@ class NewsTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.blue
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "News"
-        
-        view.addSubview(imageView)
-        view.addSubview(newsTableView)
         setupTableViewController()
         
     }
     
     func setupTableViewController() {
+        view.addSubview(imageView)
+        view.addSubview(newsTableView)
         
-        imageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 125).isActive = true
+        NSLayoutConstraint.activate([imageView.topAnchor.constraint(equalTo: view.topAnchor),
+                                     imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                                     imageView.heightAnchor.constraint(equalToConstant: 125)
+            ])
         
-        newsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        newsTableView.heightAnchor.constraint(equalToConstant: 773).isActive = true
-        newsTableView.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
+        NSLayoutConstraint.activate([newsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+                                     newsTableView.heightAnchor.constraint(equalToConstant: 773),
+                                     newsTableView.widthAnchor.constraint(equalToConstant: view.frame.width)])
     }
 }

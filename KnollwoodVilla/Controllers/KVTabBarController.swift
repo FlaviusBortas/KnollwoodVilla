@@ -21,19 +21,19 @@ class KVTabBarController: UITabBarController {
     func setupTabBar() {
         let homeCollectionViewController = HomeCollectionViewController()
         let homeIcon = Constants.kvHomeTabBarIcon
-        homeCollectionViewController.tabBarItem = UITabBarItem(title: "Home", image: homeIcon, tag: 0)
+        homeCollectionViewController.tabBarItem = UITabBarItem(title: Constants.homeTabString, image: homeIcon, tag: 0)
         
         let galleryCollectionViewController = GalleryCollectionViewController()
         let galleryIcon = Constants.kvGalleryTabBarIcon
-        galleryCollectionViewController.tabBarItem = UITabBarItem(title: "Gallery", image: galleryIcon, tag: 1)
+        galleryCollectionViewController.tabBarItem = UITabBarItem(title: Constants.galleryTabString, image: galleryIcon, tag: 1)
         
         let newsTableViewController = NewsTableViewController()
         let newsIcon = Constants.kvNewsTabBarIcon
-        newsTableViewController.tabBarItem = UITabBarItem(title: "News", image: newsIcon, tag: 2)
+        newsTableViewController.tabBarItem = UITabBarItem(title: Constants.newsTabString, image: newsIcon, tag: 2)
         
         let contactViewController = ContactViewController()
         let contactIcon = Constants.kvContactTabBarIcon
-        contactViewController.tabBarItem = UITabBarItem(title: "Contact", image: contactIcon, tag: 3)
+        contactViewController.tabBarItem = UITabBarItem(title: Constants.contactTabString, image: contactIcon, tag: 3)
         
         // Changes the image of the slected item once clicked
         //        homeController.tabBarItem.selectedImage = UIImage(named: "GalleryIcon")

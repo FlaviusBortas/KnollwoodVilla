@@ -12,7 +12,6 @@
 		EE6328FA2284CD01009C74E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6328F82284CD01009C74E1 /* LaunchScreen.storyboard */; };
 		EE6329052284CD01009C74E1 /* KnollwoodVillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6329042284CD01009C74E1 /* KnollwoodVillaTests.swift */; };
 		EE6329102284CD01009C74E1 /* KnollwoodVillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63290F2284CD01009C74E1 /* KnollwoodVillaUITests.swift */; };
-		EE632924228A0DE7009C74E1 /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE632923228A0DE7009C74E1 /* SegueIdentifiers.swift */; };
 		EEF15B3A230EF0F300CFAD58 /* KVTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B39230EF0F300CFAD58 /* KVTabBarController.swift */; };
 		EEF15B42230EF50600CFAD58 /* GalleryPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B41230EF50600CFAD58 /* GalleryPicture.swift */; };
 		EEF15B44230EF8E300CFAD58 /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B43230EF8E300CFAD58 /* GalleryCollectionViewController.swift */; };
@@ -20,6 +19,8 @@
 		EEF15B4B230F090100CFAD58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B4A230F090100CFAD58 /* Constants.swift */; };
 		EEF15B4D230F11C300CFAD58 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B4C230F11C300CFAD58 /* NewsTableViewController.swift */; };
 		EEF15B4F230F172400CFAD58 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B4E230F172400CFAD58 /* ContactViewController.swift */; };
+		EEF15B51230F3F9100CFAD58 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B50230F3F9100CFAD58 /* HomeCell.swift */; };
+		EEF15B53230F4FCF00CFAD58 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B52230F4FCF00CFAD58 /* GalleryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,6 @@
 		EE63290B2284CD01009C74E1 /* KnollwoodVillaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnollwoodVillaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE63290F2284CD01009C74E1 /* KnollwoodVillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnollwoodVillaUITests.swift; sourceTree = "<group>"; };
 		EE6329112284CD01009C74E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE632923228A0DE7009C74E1 /* SegueIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
 		EEF15B39230EF0F300CFAD58 /* KVTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVTabBarController.swift; sourceTree = "<group>"; };
 		EEF15B41230EF50600CFAD58 /* GalleryPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPicture.swift; sourceTree = "<group>"; };
 		EEF15B43230EF8E300CFAD58 /* GalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +59,8 @@
 		EEF15B4A230F090100CFAD58 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EEF15B4C230F11C300CFAD58 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		EEF15B4E230F172400CFAD58 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		EEF15B50230F3F9100CFAD58 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		EEF15B52230F4FCF00CFAD58 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,8 @@
 			children = (
 				EE6328F62284CD01009C74E1 /* Assets.xcassets */,
 				EE6328F82284CD01009C74E1 /* LaunchScreen.storyboard */,
+				EEF15B50230F3F9100CFAD58 /* HomeCell.swift */,
+				EEF15B52230F4FCF00CFAD58 /* GalleryCell.swift */,
 			);
 			path = KVViews;
 			sourceTree = "<group>";
@@ -169,7 +173,6 @@
 		EEB6EE73230C4FCB00CD4C4B /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				EE632923228A0DE7009C74E1 /* SegueIdentifiers.swift */,
 				EEF15B4A230F090100CFAD58 /* Constants.swift */,
 			);
 			path = Constants;
@@ -313,10 +316,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE632924228A0DE7009C74E1 /* SegueIdentifiers.swift in Sources */,
 				EEF15B44230EF8E300CFAD58 /* GalleryCollectionViewController.swift in Sources */,
+				EEF15B53230F4FCF00CFAD58 /* GalleryCell.swift in Sources */,
 				EEF15B42230EF50600CFAD58 /* GalleryPicture.swift in Sources */,
 				EEF15B49230EFD9700CFAD58 /* HomeCollectionViewController.swift in Sources */,
+				EEF15B51230F3F9100CFAD58 /* HomeCell.swift in Sources */,
 				EEF15B4D230F11C300CFAD58 /* NewsTableViewController.swift in Sources */,
 				EEF15B4F230F172400CFAD58 /* ContactViewController.swift in Sources */,
 				EEF15B3A230EF0F300CFAD58 /* KVTabBarController.swift in Sources */,

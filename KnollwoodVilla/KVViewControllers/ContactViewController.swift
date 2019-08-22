@@ -7,29 +7,43 @@
 //
 
 import UIKit
+import MapKit
 
 class ContactViewController: UIViewController {
     
     let contactView: UIView =  {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .green
+        
         return view
+    }()
+    
+    let mapView: MKMapView = {
+        let map = MKMapView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        map.translatesAutoresizingMaskIntoConstraints = false
+        return map
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.red
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "Contact"
-        
-        view.addSubview(contactView)
-        setupViewController()
+    
+        setupContactViewController()
     }
     
-    func setupViewController() {
-        contactView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        contactView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        contactView.heightAnchor.constraint(equalToConstant: 400).isActive = true
-        contactView.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
+    func setupContactViewController() {
+        
+        view.addSubview(contactView)
+        view.addSubview(mapView)
+        
+        NSLayoutConstraint.activate([mapView.topAnchor.constraint(equalTo: view.topAnchor),
+                                   mapView.bottomAnchor.constraint(equalTo: contactView.topAnchor),
+                                   mapView.heightAnchor.constraint(equalToConstant: 225),
+                                     mapView.widthAnchor.constraint(equalToConstant: view.frame.width)])
+        
+        NSLayoutConstraint.activate([contactView.topAnchor.constraint(equalTo: mapView.bottomAnchor),
+                                     contactView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                                     contactView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                                     contactView.bottomAnchor.constraint(equalTo: view.bottomAnchor)])
     }
 }
