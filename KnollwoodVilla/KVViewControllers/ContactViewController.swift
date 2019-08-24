@@ -16,8 +16,8 @@ class ContactViewController: UIViewController {
     var userLocation: CLLocationCoordinate2D?
     var source: MKMapItem?
 
-    var destination = MKMapItem(coordinate: .init(latitude: Constants.kvLocation.coordinate.latitude, longitude: Constants.kvLocation.coordinate.longitude), name: "Source")
-    var region = MKCoordinateRegion(center: Constants.kvLocation.coordinate, latitudinalMeters: Constants.kvRegionRadius, longitudinalMeters: Constants.kvRegionRadius)
+    var destination = MKMapItem(coordinate: .init(latitude: Constants.knollwoodVillaLocation.coordinate.latitude, longitude: Constants.knollwoodVillaLocation.coordinate.longitude), name: "Source")
+    var region = MKCoordinateRegion(center: Constants.knollwoodVillaLocation.coordinate, latitudinalMeters: Constants.KnollwoodVillaRegionRadius, longitudinalMeters: Constants.KnollwoodVillaRegionRadius)
 
     let getDirectionsButton: UIButton = {
         let button = UIButton.init(type: UIButton.ButtonType.system)

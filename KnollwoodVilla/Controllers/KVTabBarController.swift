@@ -1,5 +1,5 @@
 //
-//  KVTabBarController.swift
+//  MainTabBarController.swift
 //  KnollwoodVilla
 //
 //  Created by Flavius on 8/22/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KVTabBarController: UITabBarController {
+class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
