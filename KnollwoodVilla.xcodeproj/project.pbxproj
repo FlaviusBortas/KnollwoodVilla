@@ -22,6 +22,7 @@
 		EEF15B51230F3F9100CFAD58 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B50230F3F9100CFAD58 /* HomeCell.swift */; };
 		EEF15B53230F4FCF00CFAD58 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B52230F4FCF00CFAD58 /* GalleryCell.swift */; };
 		EEF15B562311B6AD00CFAD58 /* UIImageExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B552311B6AD00CFAD58 /* UIImageExtention.swift */; };
+		EEF15B582311CCCC00CFAD58 /* UIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B572311CCCC00CFAD58 /* UIImageTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		EEF15B50230F3F9100CFAD58 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		EEF15B52230F4FCF00CFAD58 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 		EEF15B552311B6AD00CFAD58 /* UIImageExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtention.swift; sourceTree = "<group>"; };
+		EEF15B572311CCCC00CFAD58 /* UIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				EE6329042284CD01009C74E1 /* KnollwoodVillaTests.swift */,
 				EE6329062284CD01009C74E1 /* Info.plist */,
+				EEF15B572311CCCC00CFAD58 /* UIImageTests.swift */,
 			);
 			path = KnollwoodVillaTests;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE6329052284CD01009C74E1 /* KnollwoodVillaTests.swift in Sources */,
+				EEF15B582311CCCC00CFAD58 /* UIImageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

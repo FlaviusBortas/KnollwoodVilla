@@ -24,7 +24,7 @@ class MainTabBarController: UITabBarController {
         let homeIcon = UIImage.homeTabBarIcon
         homeCollectionViewController.tabBarItem = UITabBarItem(title: Constants.TabBarNames.home, image: homeIcon, tag: 0)
         
-        let galleryCollectionViewController = GalleryCollectionViewController()
+        let galleryCollectionViewController = GalleryCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
         let galleryIcon = UIImage.galleryTabBarIcon
         galleryCollectionViewController.tabBarItem = UITabBarItem(title: Constants.TabBarNames.gallery, image: galleryIcon, tag: 1)
         
