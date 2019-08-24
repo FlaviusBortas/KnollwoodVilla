@@ -21,19 +21,19 @@ class MainTabBarController: UITabBarController {
     func setupTabBar() {
         let homeCollectionViewController = HomeCollectionViewController()
         let homeIcon = UIImage.homeTabBarIcon
-        homeCollectionViewController.tabBarItem = UITabBarItem(title: Constants.homeTabString, image: homeIcon, tag: 0)
+        homeCollectionViewController.tabBarItem = UITabBarItem(title: Constants.TabBarNames.home, image: homeIcon, tag: 0)
         
         let galleryCollectionViewController = GalleryCollectionViewController()
         let galleryIcon = UIImage.galleryTabBarIcon
-        galleryCollectionViewController.tabBarItem = UITabBarItem(title: Constants.galleryTabString, image: galleryIcon, tag: 1)
+        galleryCollectionViewController.tabBarItem = UITabBarItem(title: Constants.TabBarNames.gallery, image: galleryIcon, tag: 1)
         
         let newsTableViewController = NewsTableViewController()
         let newsIcon = UIImage.newsTabBarIcon
-        newsTableViewController.tabBarItem = UITabBarItem(title: Constants.newsTabString, image: newsIcon, tag: 2)
+        newsTableViewController.tabBarItem = UITabBarItem(title: Constants.TabBarNames.news, image: newsIcon, tag: 2)
         
         let contactViewController = ContactViewController()
         let contactIcon = UIImage.contactTabBarIcon
-        contactViewController.tabBarItem = UITabBarItem(title: Constants.contactTabString, image: contactIcon, tag: 3)
+        contactViewController.tabBarItem = UITabBarItem(title: Constants.TabBarNames.contact, image: contactIcon, tag: 3)
         
         // Changes the image of the slected item once clicked
         //        homeController.tabBarItem.selectedImage = UIImage(named: "GalleryIcon")
