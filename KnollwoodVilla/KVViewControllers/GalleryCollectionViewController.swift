@@ -76,10 +76,6 @@ extension GalleryCollectionViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GalleryCell.reuseIdentifier, for: indexPath) as! GalleryCell
-        let data = self.data[indexPath.item]
-        
-        cell.textLabel.text = String(data)
-        cell.backgroundColor = .yellow
         
         return cell
     }
