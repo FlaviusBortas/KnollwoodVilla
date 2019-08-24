@@ -21,6 +21,7 @@
 		EEF15B4F230F172400CFAD58 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B4E230F172400CFAD58 /* ContactViewController.swift */; };
 		EEF15B51230F3F9100CFAD58 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B50230F3F9100CFAD58 /* HomeCell.swift */; };
 		EEF15B53230F4FCF00CFAD58 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B52230F4FCF00CFAD58 /* GalleryCell.swift */; };
+		EEF15B562311B6AD00CFAD58 /* UIImageExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15B552311B6AD00CFAD58 /* UIImageExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		EEF15B4E230F172400CFAD58 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		EEF15B50230F3F9100CFAD58 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		EEF15B52230F4FCF00CFAD58 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		EEF15B552311B6AD00CFAD58 /* UIImageExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		EE6328EE2284CCFF009C74E1 /* KnollwoodVilla */ = {
 			isa = PBXGroup;
 			children = (
+				EEF15B542311B65D00CFAD58 /* Extentions */,
 				EE6328FB2284CD01009C74E1 /* Info.plist */,
 				EE6328EF2284CCFF009C74E1 /* AppDelegate.swift */,
 				EEB6EE73230C4FCB00CD4C4B /* Constants */,
@@ -184,6 +187,14 @@
 				EEF15B39230EF0F300CFAD58 /* KVTabBarController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EEF15B542311B65D00CFAD58 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				EEF15B552311B6AD00CFAD58 /* UIImageExtention.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +331,7 @@
 				EEF15B53230F4FCF00CFAD58 /* GalleryCell.swift in Sources */,
 				EEF15B42230EF50600CFAD58 /* GalleryPicture.swift in Sources */,
 				EEF15B49230EFD9700CFAD58 /* HomeCollectionViewController.swift in Sources */,
+				EEF15B562311B6AD00CFAD58 /* UIImageExtention.swift in Sources */,
 				EEF15B51230F3F9100CFAD58 /* HomeCell.swift in Sources */,
 				EEF15B4D230F11C300CFAD58 /* NewsTableViewController.swift in Sources */,
 				EEF15B4F230F172400CFAD58 /* ContactViewController.swift in Sources */,
