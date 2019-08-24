@@ -13,12 +13,13 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBar.backgroundColor = UIColor.black.withAlphaComponent(3)
         setupTabBar()
         
     }
 
     func setupTabBar() {
+        self.tabBar.backgroundColor = UIColor.black.withAlphaComponent(3)
+        
         let homeCollectionViewController = HomeCollectionViewController()
         let homeIcon = UIImage.homeTabBarIcon
         homeCollectionViewController.tabBarItem = UITabBarItem(title: Constants.TabBarNames.home, image: homeIcon, tag: 0)
