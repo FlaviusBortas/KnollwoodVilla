@@ -39,7 +39,10 @@ class MainTabBarController: UITabBarController {
         // Changes the image of the slected item once clicked
         //        homeController.tabBarItem.selectedImage = UIImage(named: "GalleryIcon")
         
-        let tabBarList = [homeCollectionViewController, galleryCollectionViewController, newsTableViewController, contactViewController]
+        let gallerNavigationController = UINavigationController(rootViewController: galleryCollectionViewController)
+        gallerNavigationController.navigationBar.prefersLargeTitles = true
+        
+        let tabBarList = [homeCollectionViewController, gallerNavigationController, newsTableViewController, contactViewController]
         
         viewControllers = tabBarList
     }

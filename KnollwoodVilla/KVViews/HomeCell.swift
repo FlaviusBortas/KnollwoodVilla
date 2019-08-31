@@ -8,9 +8,7 @@
 
 import UIKit
 
-class HomeCell: UICollectionViewCell {
-    
-    static var reuseIdentifier: String = "HomeCell"
+class HomeCell: UICollectionViewCell, ReuseIdentifiable {
     
     var homeImageView: UIImageView = {
         let imageView = UIImageView()

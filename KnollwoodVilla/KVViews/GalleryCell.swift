@@ -8,9 +8,7 @@
 
 import UIKit
 
-class GalleryCell: UICollectionViewCell {
-    
-    static var reuseIdentifier: String = "GalleryCell"
+class GalleryCell: UICollectionViewCell, ReuseIdentifiable {
     
     var galleryImageView: UIImageView = {
         let imageView = UIImageView()

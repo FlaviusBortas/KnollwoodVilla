@@ -8,52 +8,22 @@
 
 import UIKit
 
+
 class GalleryCollectionViewController: UICollectionViewController {
     
     var data: [Int] = Array(0..<5)
     
     let layout = UICollectionViewLayout()
     
-    let imageView: UIImageView = {
-        let banner = UIImageView()
-        
-        banner.backgroundColor = .green
-        banner.translatesAutoresizingMaskIntoConstraints = false
-        
-        return banner
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.collectionView.register(GalleryCell.self, forCellWithReuseIdentifier:
-            GalleryCell.reuseIdentifier)
+        self.collectionView.register(cellType: GalleryCell.self)
         
         self.collectionView.alwaysBounceVertical = true
         self.collectionView.backgroundColor = .purple
-//        self.collectionView.backgroundColor = .white
-        
-        setupCollectionViewController()
         
     }
-    
-    func setupCollectionViewController() {
-        
-        // Add all subViews
-        
-        view.addSubview(imageView)
-        
-//         Constraints
-        NSLayoutConstraint.activate([imageView.topAnchor.constraint(equalTo: view.topAnchor),
-                                     imageView.widthAnchor.constraint(equalToConstant: view.frame.width),
-                                     imageView.heightAnchor.constraint(equalToConstant: 125)
-            ])
-        
-        NSLayoutConstraint.activate([self.collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-                                     self.collectionView.heightAnchor.constraint(equalToConstant: 300),
-                                     self.collectionView.widthAnchor.constraint(equalToConstant: view.frame.width)])
-    }
-    
 }
 
 // Collection View Data Source
@@ -80,6 +50,7 @@ extension GalleryCollectionViewController {
     }
 }
 
+// Collection View Flow Layout
 extension GalleryCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView,

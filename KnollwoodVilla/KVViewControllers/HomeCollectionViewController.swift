@@ -36,7 +36,7 @@ class HomeCollectionViewController: UIViewController {
         
         homeCollectionViewController.dataSource = self
         homeCollectionViewController.delegate = self
-        homeCollectionViewController.register(HomeCell.self, forCellWithReuseIdentifier: HomeCell.reuseIdentifier)
+        homeCollectionViewController.register(cellType: HomeCell.self)
         
         homeCollectionViewController.alwaysBounceVertical = true
         homeCollectionViewController.backgroundColor = .white
