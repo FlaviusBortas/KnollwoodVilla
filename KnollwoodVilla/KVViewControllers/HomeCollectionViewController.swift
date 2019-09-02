@@ -8,85 +8,41 @@
 
 import UIKit
 
-class HomeCollectionViewController: UIViewController {
+class HomeCollectionViewController: UICollectionViewController {
     
     var data: [Int] = Array(0..<10)
-    
-    
-    let homeCollectionViewController: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        let collection = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: layout)
-        
-        collection.backgroundColor = UIColor.gray
-        collection.translatesAutoresizingMaskIntoConstraints = false
-        collection.isScrollEnabled = true
-        
-        return collection
-    }()
-    
-    let imageView: UIImageView = {
-       let view = UIImageView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .purple
-        return view
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        homeCollectionViewController.dataSource = self
-        homeCollectionViewController.delegate = self
-        homeCollectionViewController.register(cellType: HomeCell.self)
-        
-        homeCollectionViewController.alwaysBounceVertical = true
-        homeCollectionViewController.backgroundColor = .white
-        
-        setupCollectionViewController()
+        self.collectionView.register(cellType: HomeCell.self)
         
     }
-    
-    func setupCollectionViewController() {
-        
-        // Add all subViews
-        
-        view.addSubview(homeCollectionViewController)
-        view.addSubview(imageView)
-        
-        // Constraints
-        
-        NSLayoutConstraint.activate([imageView.topAnchor.constraint(equalTo: view.topAnchor),
-                                     imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                                     imageView.heightAnchor.constraint(equalToConstant: 125)
-            ])
-        
-        NSLayoutConstraint.activate([homeCollectionViewController.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-                                     homeCollectionViewController.heightAnchor.constraint(equalToConstant: 773),
-                                     homeCollectionViewController.widthAnchor.constraint(equalToConstant: view.frame.width)])
-    }
-    
 }
 
-extension HomeCollectionViewController: UICollectionViewDataSource {
+// Collection View Data Source
+extension HomeCollectionViewController {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCell.reuseIdentifier, for: indexPath) as! HomeCell
         
         return cell
     }
 }
 
-extension HomeCollectionViewController: UICollectionViewDelegate {
+// Coolection View Delegate
+extension HomeCollectionViewController {
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
     }
 }
 
+// Collection View Flow Layout
 extension HomeCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView,

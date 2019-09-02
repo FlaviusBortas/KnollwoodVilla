@@ -8,46 +8,33 @@
 
 import UIKit
 
-class NewsTableViewController: UIViewController {
+class NewsTableViewController: UITableViewController {
     
-    let newsTableView: UITableView = {
-        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), style: UITableView.Style.plain)
-        
-        tableView.backgroundColor = UIColor.gray
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.isScrollEnabled = true
-        
-        return tableView
-    }()
-    
-    let imageView: UIImageView = {
-        let banner = UIImageView()
-        
-        banner.backgroundColor = UIColor.green
-        banner.translatesAutoresizingMaskIntoConstraints = false
-        
-        return banner
-    }()
+    var data: [Int] = Array(0..<10)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 125
+        tableView.backgroundColor = .yellow
+        self.tableView.register(NewsCell.self, forCellReuseIdentifier: NewsCell.reuseIdentifier)
         
-        setupTableViewController()
-        
+    }
+}
+
+// Table View Data Source
+extension NewsTableViewController {
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
     }
     
-    func setupTableViewController() {
-        view.addSubview(imageView)
-        view.addSubview(newsTableView)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: NewsCell.reuseIdentifier, for: indexPath) as! NewsCell
         
-        NSLayoutConstraint.activate([imageView.topAnchor.constraint(equalTo: view.topAnchor),
-                                     imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                                     imageView.heightAnchor.constraint(equalToConstant: 125)
-            ])
+        cell.label.text = "\(data[indexPath.row])"
+        cell.label.backgroundColor = .green
         
-        NSLayoutConstraint.activate([newsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-                                     newsTableView.heightAnchor.constraint(equalToConstant: 773),
-                                     newsTableView.widthAnchor.constraint(equalToConstant: view.frame.width)])
+        return cell
     }
+    
 }

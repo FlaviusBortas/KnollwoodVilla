@@ -20,7 +20,8 @@ class MainTabBarController: UITabBarController {
     func setupTabBar() {
         self.tabBar.backgroundColor = UIColor.black.withAlphaComponent(3)
         
-        let homeCollectionViewController = HomeCollectionViewController()
+        // Controllers
+        let homeCollectionViewController = HomeCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
         let homeIcon = UIImage.homeTabBarIcon
         homeCollectionViewController.tabBarItem = UITabBarItem(title: Constants.TabBarNames.home, image: homeIcon, tag: 0)
         
@@ -36,15 +37,18 @@ class MainTabBarController: UITabBarController {
         let contactIcon = UIImage.contactTabBarIcon
         contactViewController.tabBarItem = UITabBarItem(title: Constants.TabBarNames.contact, image: contactIcon, tag: 3)
         
-        // Changes the image of the slected item once clicked
-        //        homeController.tabBarItem.selectedImage = UIImage(named: "GalleryIcon")
+        // Create navControllers with Controllers as root views
+        let galleryNavigationController = UINavigationController(rootViewController: galleryCollectionViewController)
+        galleryNavigationController.navigationBar.prefersLargeTitles = true
         
-        let gallerNavigationController = UINavigationController(rootViewController: galleryCollectionViewController)
-        gallerNavigationController.navigationBar.prefersLargeTitles = true
+        let homeNavigationController = UINavigationController(rootViewController: homeCollectionViewController)
+        homeNavigationController.navigationBar.prefersLargeTitles = true
         
-        let tabBarList = [homeCollectionViewController, gallerNavigationController, newsTableViewController, contactViewController]
+        let newsNavigationController = UINavigationController(rootViewController: newsTableViewController)
+        newsNavigationController.navigationBar.prefersLargeTitles = true
+        
+        let tabBarList = [homeNavigationController, galleryNavigationController, newsNavigationController, contactViewController]
         
         viewControllers = tabBarList
     }
-
 }

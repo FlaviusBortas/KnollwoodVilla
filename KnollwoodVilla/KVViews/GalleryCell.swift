@@ -10,31 +10,14 @@ import UIKit
 
 class GalleryCell: UICollectionViewCell, ReuseIdentifiable {
     
-    var galleryImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFill
-        imageView.isUserInteractionEnabled = true
-        imageView.backgroundColor = .red
-        return imageView
-    }()
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
-
-        self.contentView.addSubview(galleryImageView)
         
-        NSLayoutConstraint.activate([
-            galleryImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            galleryImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            galleryImageView.topAnchor.constraint(equalTo: topAnchor),
-            galleryImageView.bottomAnchor.constraint(equalTo: bottomAnchor)
-            ])
+        self.backgroundColor = .red
     
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
